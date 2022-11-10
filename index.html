@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> -->
     <title>Academlo Store</title>
-</head>
+  </head>
   <body>
     <!-- header -->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav__logo-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48.92 56.48"
+            class="nav__logo-icon"
+          >
             <title>Academlo Logo</title>
             <g>
               <g>
-                <path d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
-                </path>
+                <path
+                  d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"
+                ></path>
               </g>
             </g>
           </svg>
@@ -39,59 +44,69 @@
             </li>
           </ul>
           <div class="nav__close" id="nav-close">
-            <i class="bx bx-x"><box-icon name='x'></box-icon></i>
+            <i class="bx bx-x"><box-icon name="x"></box-icon></i>
           </div>
         </div>
         <div class="nav__btns">
-          <i class="bx bx-moon change-theme" id="theme-button"><box-icon name='moon'></box-icon></i>
+          <i class="bx bx-moon change-theme" id="theme-button"
+            ><box-icon name="moon"></box-icon
+          ></i>
           <div class="nav__shop" id="cart-shop">
-            <i class="bx bx-shopping-bag"><box-icon name='shopping-bag'></box-icon></i>
+            <i class="bx bx-shopping-bag"
+              ><box-icon name="shopping-bag"></box-icon
+            ></i>
             <span id="cart-count" class="count">0</span>
           </div>
           <div class="nav__toggle" id="nav-toggle">
-            <i class="bx bx-grid-alt"><box-icon name='grid-alt'></box-icon></i>
+            <i class="bx bx-grid-alt"><box-icon name="grid-alt"></box-icon></i>
           </div>
-        </div>       
+        </div>
       </nav>
     </header>
     <!-- cart -->
     <div class="cart" id="cart">
       <i class="bx bx-x" id="cart-close">
-        <box-icon name='x'></box-icon>
+        <box-icon name="x"></box-icon>
       </i>
-  
+
       <h2 class="cart__title-center">My Cart</h2>
-  
+
       <div class="cart__container">
         <div class="cart__empty">
-          <img src="assets/img/empty-cart.png" alt="empty cart">
+          <img src="assets/img/empty-cart.png" alt="empty cart" />
           <h2>Your cart is empty</h2>
-          <p>You can add items to your cart by clicking on the "<i class="bx bx-plus"></i>" button on the product page.</p>
+          <p>
+            You can add items to your cart by clicking on the "<i
+              class="bx bx-plus"
+            ></i
+            >" button on the product page.
+          </p>
         </div>
       </div>
-  
+
       <div class="cart__prices">
-        <span class="cart__prices-item"><span id="items-count">0</span> items</span>
+        <span class="cart__prices-item"
+          ><span id="items-count">0</span> items</span
+        >
         <span class="cart__prices-total" id="cart-total">$0.00</span>
       </div>
-  
     </div>
     <!-- Main -->
     <main>
       <section class="home" id="home">
         <div class="home__container">
           <div class="home__img-bg">
-            <img class="home__img" src="./assets/img/home.png"></img>
+            <img class="home__img" src="./assets/img/home.png" />
           </div>
           <div class="home__data">
             <h1 class="home__title">
               New Sweatshirt
-              <br>
+              <br />
               COLLECTIONS 2022
             </h1>
             <p class="home__description">
-              Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with a modern
-              design.
+              Latest arrival of the new Hanes Midweight Crewneck sweatshirt
+              imported from the 2022 series, with a modern design.
             </p>
             <span class="home__price">$14.00</span>
             <div class="home__btns">
@@ -103,44 +118,35 @@
       </section>
       <!-- products -->
       <section class="products" id="products">
-        <div class="products__container">
+        <div class="products__container container">
           <ul class="products__filters">
-            <li class="products__item products__line">
-              <h3 class="products__title">
-                Show All
-              </h3>
-              <span class="products__stock">
-                show all products
-              </span>
+            <li class="products__item products__line" data-filter="all">
+              <h3 class="products__title">Show All</h3>
+              <span class="products__stock"> show all products </span>
             </li>
-            <li class="products__item products__line">
-              <h3 class="products__title">
-                Hoodies
-              </h3>
-              <span class="products__stock">
-                3 products
-              </span>
+
+            <li class="products__item products__line" data-filter=".hoodies">
+              <h3 class="products__title">Hoodies</h3>
+              <span class="products__stock"> 3 products </span>
             </li>
-            <li class="products__item products__line">
-              <h3 class="products__title">
-                Shirts
-              </h3>
-              <span class="products__stock">
-                4 products
-              </span>
+            <li class="products__item products__line" data-filter=".shirts">
+              <h3 class="products__title">Shirts</h3>
+              <span class="products__stock"> 4 products </span>
             </li>
-            <li class="products__item products__line">
-              <h3 class="products__title">
-                Sweatshirts
-              </h3>
-              <span class="products__stock">
-                4 products
-              </span>
+            <li class="products__item products__line" data-filter=".sweatshirts">
+              <h3 class="products__title">Sweatshirts</h3>
+              <span class="products__stock"> 4 products </span>
             </li>
           </ul>
           <div class="products__content">
-            <article class="products__card">
-              <div class="products__shape"><img src="./assets/img/featured1.png" alt="" class="products__img"></div>
+            <article class="products__card mix hoodies">
+              <div class="products__shape">
+                <img
+                  src="./assets/img/featured1.png"
+                  alt=""
+                  class="products__img"
+                />
+              </div>
               <div class="products__data">
                 <h2 class="products__price">
                   $14.00
@@ -148,12 +154,18 @@
                 </h2>
                 <h3 class="products__name">Hoodies</h3>
                 <button class="products__button" id="1">
-                  <box-icon class="plus" id="1" name='plus'></box-icon>
+                  <box-icon class="plus" id="1" name="plus"></box-icon>
                 </button>
               </div>
             </article>
-            <article class="products__card">
-              <div class="products__shape"><img src="./assets/img/featured2.png" alt="" class="products__img"></div>
+            <article class="products__card mix shirts">
+              <div class="products__shape">
+                <img
+                  src="./assets/img/featured2.png"
+                  alt=""
+                  class="products__img"
+                />
+              </div>
               <div class="products__data">
                 <h2 class="products__price">
                   $24.00
@@ -161,12 +173,18 @@
                 </h2>
                 <h3 class="products__name">Shirts</h3>
                 <button class="products__button" id="2">
-                  <box-icon class="plus" id="2" name='plus'></box-icon>
+                  <box-icon class="plus" id="2" name="plus"></box-icon>
                 </button>
               </div>
             </article>
-            <article class="products__card">
-              <div class="products__shape"><img src="./assets/img/featured3.png" alt="" class="products__img"></div>
+            <article class="products__card mix sweatshirts">
+              <div class="products__shape">
+                <img
+                  src="./assets/img/featured3.png"
+                  alt=""
+                  class="products__img"
+                />
+              </div>
               <div class="products__data">
                 <h2 class="products__price">
                   $24.00
@@ -174,7 +192,7 @@
                 </h2>
                 <h3 class="products__name">Sweatshirts</h3>
                 <button class="products__button" id="3">
-                  <box-icon class="plus" id="3" name='plus'></box-icon>
+                  <box-icon class="plus" id="3" name="plus"></box-icon>
                 </button>
               </div>
             </article>
@@ -186,7 +204,9 @@
       <div class="footer__container">
         <div class="footer__content">
           <h3 class="footer__title">Our information</h3>
-          <ul class="footer__list"><li>Toluca - México</li></ul>
+          <ul class="footer__list">
+            <li>Toluca - México</li>
+          </ul>
         </div>
         <div class="footer__content">
           <h3 class="footer__title">About Us</h3>
@@ -203,7 +223,7 @@
             <li>
               <a href="#" class="footer__link">Copy Right</a>
             </li>
-          </ul>          
+          </ul>
         </div>
         <div class="footer__content">
           <h3 class="footer__title">Product</h3>
@@ -216,14 +236,21 @@
         <div class="footer__content">
           <h3 class="footer__title">Social</h3>
           <ul class="footer__social">
-            <a href="" class="footer__social-link"><box-icon type='logo' name='facebook'></box-icon></a>
-            <a href="" class="footer__social-link"><box-icon type='logo' name='twitter'></box-icon></a>
-            <a href="" class="footer__social-link"><box-icon type='logo' name='instagram'></box-icon></a>
+            <a href="" class="footer__social-link"
+              ><box-icon type="logo" name="facebook"></box-icon
+            ></a>
+            <a href="" class="footer__social-link"
+              ><box-icon type="logo" name="twitter"></box-icon
+            ></a>
+            <a href="" class="footer__social-link"
+              ><box-icon type="logo" name="instagram"></box-icon
+            ></a>
           </ul>
         </div>
       </div>
       <span class="footer__copy">© ACADEMLO. All rigths reserved</span>
     </footer>
+    <script src="./assets/mixitup.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="./assets/main.js" type="module"></script>
   </body>

@@ -212,5 +212,13 @@ cart__prices.addEventListener("click", (e) => {
       }
   }
 });
+mixitup('.products__content', {
+  selectors: {
+    target: '.products__card'
+  },
+  animation: {
+    duration: 300
+  }
+}).filter('all')
 
 printTotal()
