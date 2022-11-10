@@ -225,7 +225,7 @@ mixitup(".products__content", {
 }).filter("all");
 
 bx__moon.addEventListener("click", (e)=>
-  alert("Gracias Profe por todo!! Sin usted no ubiera aprendido tanto. MI DIOS SE LO PAGUE")  
+  alert("Gracias Profe por todo!! Sin usted no hubiera aprendido tanto. MI DIOS SE LO PAGUE")  
 );
 
 printTotal();
