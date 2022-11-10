@@ -39,7 +39,6 @@ p {
     color: hsl(0, 0%, 45%);
     font-weight: 500;
 }
-
 .header {
     width: 100%;
     background: transparent;
@@ -720,33 +719,3 @@ div {
         margin-right: auto;
     }
 }
-
-body.dark-theme {
-    --first-color: hsl(182, 53%, 74%);
-    --button-color: hsl(246, 16%, 12%);
-    --button-color-alt: hsl(0, 0%, 28%);
-    --card-color: hsla(246, 16%, 5%, .5);
-    --title-color: hsl(0, 0%, 95%);
-    --text-color: hsl(0, 0%, 75%);
-    --body-color: hsl(249, 19%, 14%);
-    --container-color: hsl(246, 16%, 12%);
-    --border-color: hsl(0, 0%, 20%);
-  }
-
-/* .dark-theme .change-theme,
-.dark-theme .nav__toggle,
-.dark-theme .nav__shop,
-.dark-theme .button--gray {
-  color: hsl(0, 0%, 15%);
-}
-.dark-theme .scroll-header {
-  box-shadow: 0 1px 4px hsla(0, 0%, 4%, .3);
-}
-.scroll-header .change-theme,
-.scroll-header .nav__toggle,
-.scroll-header .nav__shop {
-  color: var(--title-color);
-}
-.dark-theme::-webkit-scrollbar {
-  background: hsl(0, 0%, 30%);
-} */
